@@ -4,8 +4,8 @@ import yfinance as yf
 from pmdarima.arima import auto_arima
 
 st.title("Stock Forcasting Application")
-st.caption("Please do not use this application's prediction/forcasting to make your financial investments--- This Application is for Educational perpose only. ")
-st.sidebar.caption("Please do not use this application's prediction/forcasting to make your financial investments--- This Application is for Educational perpose only.")
+st.caption("Please do not use this application's prediction/forcasting to make your financial investments--- This Application is for Educational purpose only. ")
+st.sidebar.caption("Please do not use this application's prediction/forcasting to make your financial investments--- This Application is for Educational purpose only.")
 
 stocks_list = ["AAL","AAPL","ABMD","ABNB","ADBE","ADI","ADP","ADSK","AEP","AKAM","ALGN","ALNY","AMAT","AMD","AMGN","AMZN","ANSS","APA",
                "APP","ARCC","ATVI","AVGO","AZPN","BIIB","BKNG","BKR","BMRN","BSY","CAR","CDNS","CDW","CEG","CERN","CG","CGNX","CHK","CHRW"
