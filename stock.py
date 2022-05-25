@@ -40,7 +40,7 @@ st.write("The Line Chart for the stock is as follows:")
 st.line_chart(df.Close)
 
 if st.button("Show Forcast for closing price of stock for upcoming 5 business days"):
-    st.caption("The Model will take some for computation")
+    st.caption("The Model will take some time for computation")
     arima_model = auto_arima(df.Close)
     forcast = pd.DataFrame(arima_model.predict(n_periods = 5))
     forcast.columns = ["Forcast for upcoming 5 business days"]
