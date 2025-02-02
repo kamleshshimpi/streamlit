@@ -24,7 +24,7 @@ ticker_sidebar_sel_itm = st.sidebar.selectbox("Choose your company ticker",stock
 
 ticker_sidebar_sel_itm = str(ticker_sidebar_sel_itm)
 
-raw_data = yf.download(tickers= ticker_sidebar_sel_itm, start='2015-01-01' )
+raw_data = yf.download(tickers= ticker_sidebar_sel_itm, start='2020-01-01' )
 
 st.write("Historical Raw Data for stocks is as follows:")
 
