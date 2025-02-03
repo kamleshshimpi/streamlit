@@ -26,10 +26,6 @@ ticker_sidebar_sel_itm = str(ticker_sidebar_sel_itm)
 
 raw_data = yf.download(tickers= ticker_sidebar_sel_itm, start='2020-01-01' )
 
-st.write("Historical Raw Data for stocks is as follows:")
-
-st.write(raw_data)
-
 df = raw_data.copy()
 
 df = df.asfreq('b')
@@ -37,6 +33,9 @@ df = df.asfreq('b')
 df = df.fillna(method = 'bfill')
 
 df = df.sort_index(ascending=False)
+
+st.write("Historical Raw Data for stocks is as follows:")
+st.write(df)
 
 st.write("The Line Chart for the stock is as follows:")
 st.line_chart(df.Close)
