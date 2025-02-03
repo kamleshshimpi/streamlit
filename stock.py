@@ -36,6 +36,8 @@ df = df.asfreq('b')
 
 df = df.fillna(method = 'bfill')
 
+df = df.sort_index(ascending=False)
+
 st.write("The Line Chart for the stock is as follows:")
 st.line_chart(df.Close)
 
